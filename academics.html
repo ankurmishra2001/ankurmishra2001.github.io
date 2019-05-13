@@ -1,0 +1,122 @@
+<!DOCTYPE html>  
+<html>  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+   body {
+          background: url("bg.jpg");
+		  background-size: cover;
+		  background-color:black;
+
+		}
+   ul.pagination {  
+    display: inline-block;  
+    padding: 0;  
+    margin: 0;  
+}  
+ul.pagination li {display: inline;}  
+ul.pagination li a {  
+    color: white;  
+    float: left;  
+    padding: 8px 16px;  
+    font-size: 100%;
+    text-shadow:3px 3px #616A6B;
+    text-decoration: none;	
+    text-underline-position: under;
+}  
+  ul li a {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out 0.2s;
+}
+ul li:hover a{
+  transform: scale(1.2);
+  transition: all 0.1s ease-in-out 0.1s;
+}
+
+.swap-on-hover {
+  position: relative;
+    margin-top: 7%;
+    margin-left: 5%;	
+	max-width: 400px;
+}
+.swap-on-hover img {
+  position: absolute;
+	overflow: hidden;
+	width: 400px;
+	height: 400px;
+	border-style: groove;
+    border-width: thick;
+    border-color: gray;
+    padding: 5px;
+}
+.swap-on-hover .swap-on-hover__front-image {
+  z-index: 9999;
+  transition: opacity .5s linear;
+  cursor: pointer;
+}
+.swap-on-hover:hover > .swap-on-hover__front-image{
+  opacity: 0;
+}
+    p{  
+	    float:right;
+	    color:white;
+		font-family: "Tangerine",serif;
+		font-size:150%;
+		margin-top:0px;
+	}
+	.header{
+	    text-align:center;
+		font-family:aerial;
+		font-size:250%;
+		color:Red;
+		margin-top:3%;
+		transition: transform .1s;
+		}
+	.header:hover{transform: scale(1.1)}
+	
+ul{
+    color:white;
+	list-style-type:circle;
+	font-size:150%;
+	margin-top:10%;
+	margin-left:50%;
+	line-height:200%;
+  }
+  
+  .info{
+       color:white;
+	   font-size:150%;
+	  }
+  
+.info:hover{
+         text-decoration:underline;
+		 }
+		 
+      
+</style>
+</head>
+<title>ACADEMICS</title>
+<body>
+<ul class="pagination">  
+  <li><a href="index.html">ABOUT ME</a></li>  
+  <li><a class="active" href="academics.html"><u>ACADEMICS</u></a></li>  
+  <li><a href="interests.html">INTERESTS</a></li>  
+  <li><a href="achievements.html">ACHIEVEMENTS</a></li>  
+  <li><a href="contacts.html">CONTACTS</a></li>   
+</ul>  
+<p align="right">ANKUR MISHRA</p>
+<div class="header"><b>ACADEMICS</b></div> 
+<figure class="swap-on-hover">
+  <img  class="swap-on-hover__front-image" src="academic.png"/>
+  <img class="swap-on-hover__back-image" src="joker.jpg"/>
+</figure>
+ <ul>
+     <li class="info"><div>Swati Public School (2004-2008)</div></li>
+	 <li class="info"><div>Presidency International School (2008-2011)</div></li>
+	 <li class="info"><div>Modern Public School (2011-2018)</div></li>
+	 <li class="info"><div>FIITJEE,Gurgaon (2014-2018)</div></li>
+	 <li class="info"><div>IIT Kharagpur (2018-2022)</div></li>
+<ul>
+
+</body>
+</html>
